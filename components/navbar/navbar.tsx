@@ -30,8 +30,8 @@ export const NavbarWrapper = ({ children }: Props) => {
           className="w-fit data-[justify=end]:flex-grow-0 justify-end"
         >
           <NotificationsDropdown />
+          <DarkModeSwitch />
           <NavbarContent>
-            <DarkModeSwitch />
             <UserDropdown />
           </NavbarContent>
         </NavbarContent>

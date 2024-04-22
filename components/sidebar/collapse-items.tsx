@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { ChevronUpIcon } from "../icons/sidebar/chevron-up-icon";
-import { Accordion, AccordionItem } from "@nextui-org/react";
-import clsx from "clsx";
+import { Accordion, AccordionItem, Button } from "@nextui-org/react";
 
 interface Props {
   icon: React.ReactNode;
@@ -36,12 +35,14 @@ export const CollapseItems = ({ icon, items, title }: Props) => {
         >
           <div className="pl-12">
             {items.map((item, index) => (
-              <span
+              <Button
+                size="md"
                 key={index}
-                className="w-full flex  text-default-500 hover:text-default-900 transition-colors"
+                color="primary" variant="ghost"
+                className="w-full flex my-2  text-default-500 hover:text-default-900 transition-colors"
               >
                 {item}
-              </span>
+              </Button >
             ))}
           </div>
         </AccordionItem>
