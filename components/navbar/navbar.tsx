@@ -11,7 +11,7 @@ interface Props {
 
 export const NavbarWrapper = ({ children }: Props) => {
   return (
-    <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+    <div className="relative py-3 flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
       <Navbar
         isBordered
         className="w-full"
@@ -30,8 +30,8 @@ export const NavbarWrapper = ({ children }: Props) => {
           className="w-fit data-[justify=end]:flex-grow-0 justify-end"
         >
           <NotificationsDropdown />
-          <DarkModeSwitch />
           <NavbarContent>
+            <DarkModeSwitch />
             <UserDropdown />
           </NavbarContent>
         </NavbarContent>

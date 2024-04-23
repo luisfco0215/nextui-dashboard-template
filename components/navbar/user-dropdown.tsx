@@ -4,11 +4,9 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
-  Navbar,
   NavbarItem,
 } from "@nextui-org/react";
 import React from "react";
-import { DarkModeSwitch } from "./darkmodeswitch";
 
 export const UserDropdown = () => {
   return (
@@ -18,7 +16,7 @@ export const UserDropdown = () => {
           <Avatar
             as="button"
             color="secondary"
-            size="md"
+            size="lg"
             src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
           />
         </DropdownTrigger>
